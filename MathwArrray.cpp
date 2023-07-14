@@ -78,20 +78,28 @@ int main(){
                 arrayC[i][j]=arrayA[i][j]+arrayB[i][j];
             }
         }
+        cout<<"Kết quả tính toán:"<<endl;
+        for (int i=0;i<m;i++){
+            for (int j=0;j<n;j++){
+                cout<<arrayC[i][j]<<',';
+            }
+        cout<<endl;    
+        }
     }else if (operand == '-'){
         for (int i=0;i<m;i++){
             for (int j=0;j<n;j++){
                arrayC[i][j]=arrayA[i][j]-arrayB[i][j];
             }
+        }
+        cout<<"Kết quả tính toán:"<<endl;
+        for (int i=0;i<m;i++){
+            for (int j=0;j<n;j++){
+                cout<<arrayC[i][j]<<',';
+            }
+        cout<<endl;    
         } 
     }else {
-        cout<<"OPERAND ERROR";
+        cout<<"Lỗi tính toán";
     }
-    cout<<"Kết quả tính toán:"<<endl;
-    for (int i=0;i<m;i++){
-        for (int j=0;j<n;j++){
-            cout<<arrayC[i][j]<<',';
-        }
-        cout<<endl;    
-    }
+
 }
