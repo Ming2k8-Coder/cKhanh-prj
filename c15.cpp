@@ -79,6 +79,7 @@ int main(){
     for (int i=1;i<m-1;i++){
     //tính tổng cột 0 (trừ 2 ptu đã tính)
     sum += array[i][0];
+    //cột n-1
     sum += array[i][n-1];
    }
    cout<<"Tổng viền ngoài của bảng là: "<<sum;
