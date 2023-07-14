@@ -7,11 +7,11 @@ bool genmode_on;
 int maxval;
 bool printYN = 1;
 int main(){
-    cout<<"MAX SIZE của Mảng 2D(Hàng cột):";
-    cin>>m>>n;
-    cout<<"Hàng "<<m<<" Cột "<<n<<endl;
-    int array[m][n];
-    if (m > 20 || n > 20){
+    cout<<"MAX SIZE của Mảng 1D(Hàng):";
+    cin>>m;
+    cout<<"Số ô: "<<m<<endl;
+    int array[m];
+    if (m > 100){
         cout<<"Đã phát hiện mảng lớn, khuyên dùng máy random và không in mảng đã tạo"<<endl;
         cout<<"Có in mảng sau khi tạo?,1:True 0:False";
         cin >>printYN;
@@ -22,31 +22,23 @@ int main(){
     if (genmode_on){
         cout<<"Số tối đa nếu random:";
         cin>>maxval;
-        srand((unsigned) time(NULL));
+        srand((unsigned) time(NULL));//seed
         for (int i=0;i<m;i++){
-            for (int j=0;j<n;j++){
-                array[i][j]=rand() % maxval; //Range
-            }
+            array[i]=rand() % maxval; //Range
         }
 
     
     }else{
         for (int i=0;i<m;i++){
-            for (int j=0;j<n;j++){
-                cout<<"Nhập phần tử ở hàng "<<i<<" cột "<<j<<" của mảng";
-                cin>>array[i][j];
-                cout<<endl;
+            cout<<"Nhập phần tử ở ô số "<<i<<" của mảng";
+            cin>>array[i];
+            cout<<endl;
             }
         }
-
-    }
     if (printYN){
         cout<<"Array_Gened:"<<endl;
         for (int i=0;i<m;i++){
-            for (int j=0;j<n;j++){
-                cout<<array[i][j]<<',';
-            }
-            cout<<endl;
+            cout<<array[i]<<',';   
         }
     }
 }
