@@ -33,7 +33,7 @@ int main(){
     }else{
         for (int i=0;i<m;i++){
             for (int j=0;j<n;j++){
-                cout<<"Nhập phần tử ở hàng "<<i<<" cột "<<j<<" của mảng";
+                cout<<"Nhập phần tử ở hàng "<<i<<" cột "<<j<<" của mảng:";
                 cin>>array[i][j];
                 cout<<endl;
             }

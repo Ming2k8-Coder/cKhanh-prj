@@ -38,14 +38,14 @@ int main(){
     }else{
         for (int i=0;i<m;i++){
             for (int j=0;j<n;j++){
-                cout<<"Nhập phần tử ở hàng "<<i<<" cột "<<j<<" của mảng 1";
+                cout<<"Nhập phần tử ở hàng "<<i<<" cột "<<j<<" của mảng 1:";
                 cin>>arrayA[i][j];
                 cout<<endl;
             }
         }
         for (int i=0;i<m;i++){
             for (int j=0;j<n;j++){
-                cout<<"Nhập phần tử ở hàng "<<i<<" cột "<<j<<" của mảng 2";
+                cout<<"Nhập phần tử ở hàng "<<i<<" cột "<<j<<" của mảng 2:";
                 cin>>arrayB[i][j];
                 cout<<endl;
             }
