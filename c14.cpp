@@ -62,4 +62,5 @@ int main(){
         }
     }  
     cout<<"Hàng "<<k<<" có tổng các biến lớn nhất.";
+    return 0;
 }

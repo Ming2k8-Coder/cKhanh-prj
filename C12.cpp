@@ -87,5 +87,5 @@ int main(){
     cout<<endl;
     int maxnum = maxFreqv2(array,numofnum);//func maxfreq nếu dùng Moore Alogrithm
     cout<<"SO xuất hiện nhiều nhất( lớn nhất nếu tần suất bằng nhau) "<<maxnum;
-    
+    return 0;
 }

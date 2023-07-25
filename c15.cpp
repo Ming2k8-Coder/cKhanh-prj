@@ -83,4 +83,5 @@ int main(){
     sum += array[i][n-1];
    }
    cout<<"Tổng viền ngoài của bảng là: "<<sum;
+   return 0;
 }
