@@ -42,9 +42,10 @@ int main(){
     }
     if (printYN){
         cout<<"Array_Gened:"<<endl;
+        freopen("outgen2d.out","w",stdout);
         for (int i=0;i<m;i++){
             for (int j=0;j<n;j++){
-                cout<<array[i][j]<<',';
+                cout<<array[i][j]<<' ';
             }
             cout<<endl;
         }
